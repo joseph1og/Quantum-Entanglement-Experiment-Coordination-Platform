@@ -1,0 +1,29 @@
+[project]
+name = 'Quantum-Entanglement-Experiment-Coordination-Platform'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.experiment-coordination]
+path = 'contracts/experiment-coordination.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.quantum-token]
+path = 'contracts/quantum-token.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.result-storage]
+path = 'contracts/result-storage.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
